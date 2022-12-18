@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(-90deg, rgba(255,53,208,1) 0%, rgba(255,125,198,1) 47%, rgba(144,205,255,1) 100%);
+    animation: colors infinite 5s ease-in-out;
+    transition: background 2s ease-in-out;
+}
+
+/* @keyframes colors {
+    0%{
+        background: linear-gradient(-90deg, rgba(255,53,208,1) 0%, rgba(255,125,198,1) 47%, rgba(144,205,255,1) 100%);
+        
+    }
+    50%{
+        background: linear-gradient(45deg, rgb(72, 255, 255) 0%, rgb(203, 150, 255) 47%, rgb(0, 214, 207) 100%);
+    }
+    100%{
+        background: linear-gradient(90deg, rgb(250, 255, 230) 0%, rgb(229, 133, 255) 47%, rgb(64, 70, 255,0.4) 100%);
+    }
+    
+} */
+.lgb{
+    background-color: rgba(196, 228, 255, 0.506);
+}
+
+.lb{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px) contrast(150%);
+
+}
+i{
+    color: rgb(203, 203, 203);
+}
+#flow{
+    display: flex;
+    /* background-color: red; */
+    /* justify-content: space-evenly; */
+}
+#flow div div{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(2, 130, 242);
+    border-radius: 50%;
+    position: relative;
+}
+#flow div div::after{
+    content: '';
+    background-color: red;
+    height: 3px;
+    width: 200%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
